@@ -23,6 +23,8 @@ format:
 
 # ANOVA tradicional
 
+---
+
 ::: box-blue
 - Um método estatístico desenvolvido por Fisher
 :::
@@ -31,7 +33,9 @@ format:
 - Compara médias para avaliar a existência de efeito de um fator sobre alguma variável de interesse
 :::
 
-## 1. Hipóteses a serem testadas
+<br>
+
+### 1. Hipóteses a serem testadas
 
 ::: box-blue
 $H_0: \mu_0 = \mu_1 = ... = \mu_k$
@@ -64,7 +68,10 @@ $F = \frac{QMTrat}{QMRes}$ \~ $F_{{k-1},{N-k}}$
 
 # Homogeneidade e Heterogeneidade de variâncias
 
-## Homogeneidade
+---
+
+
+### Homogeneidade
 
 :::box-green
 A hipótese de igualdade de variâncias é utilizada para que o Quadrado Médio do Tratamento seja uma estimativa válida da variância dos grupos, permitindo construir a estatística $F$ e utilizar sua distribuição F no teste de igualdade de médias.
@@ -72,8 +79,10 @@ A hipótese de igualdade de variâncias é utilizada para que o Quadrado Médio 
 
 <br>
 
-## Heterogeneidade
+### Heterogeneidade
 
 :::box-blue
 Quando as variâncias entre os grupos são diferentes, o Quadrado Médio do Tratamento deixa de ser uma boa estimativa de única variância que represente todos os grupos, podendo afetar a validade do teste $F$.
 :::
+
+# Teste de Tukey (comparação múltiplas)
