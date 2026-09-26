@@ -86,3 +86,7 @@ Quando as variâncias entre os grupos são diferentes, o Quadrado Médio do Trat
 :::
 
 # Teste de Tukey (comparação múltiplas)
+
+# Referências
+
+- MORAES, J.R. Notas de aula de Inferência 1. Niterói, 2026.
