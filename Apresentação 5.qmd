@@ -1,0 +1,79 @@
+---
+title: "**PRÁTICA ESTATÍSTICA 2**"
+subtitle: "**ATIVIDADE AVALIATIVA 5**"
+author: "Igor Fernandes (<igorfn@id.uff.br>) <br> Marccello Ghellere (<mghellere@id.uff.br>) <br> Gustavo Medeiros (<gmmlima@id.uff.br>)"
+date: today
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: personalizado.css
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    title-slide-attributes:
+      data-background-image: "Capa.jpg"
+      data-background-size: cover
+---
+
+# ANOVA tradicional
+
+::: box-blue
+- Um método estatístico desenvolvido por Fisher
+:::
+
+::: box-green
+- Compara médias para avaliar a existência de efeito de um fator sobre alguma variável de interesse
+:::
+
+## 1. Hipóteses a serem testadas
+
+::: box-blue
+$H_0: \mu_0 = \mu_1 = ... = \mu_k$
+
+$H_1: \mu_i \neq \mu_j$ para algum par i, j
+:::
+
+## 2. Estatística de Teste
+
+Sejam:
+
+- $n_i$: o tamanho da i-ésima amostra
+- $y_i$: a i-ésima observação de y.
+
+::: box-blue
+$SQTrat = \sum_{i=1}^{k} n_i \bar y_i^2 - N \bar y^2$, com k-1 gl's
+
+$SQRes = \sum_{i=1}^{k} \sum_{j=1}^{n_i} y_{ij}^2 - \sum_{i=1}^{k} n_i \bar y_i^2$, com N-k gl's
+:::
+
+::: box-green
+$QMTrat = \frac{SQTrat}{k-1}$ $QMRes = \frac{SQRes}{N-k}$
+:::
+
+Então, a estatística de teste F da ANOVA é definida por:
+
+::: box-orange
+$F = \frac{QMTrat}{QMRes}$ \~ $F_{{k-1},{N-k}}$
+:::
+
+# Homogeneidade e Heterogeneidade de variâncias
+
+## Homogeneidade
+
+:::box-green
+A hipótese de igualdade de variâncias é utilizada para que o Quadrado Médio do Tratamento seja uma estimativa válida da variância dos grupos, permitindo construir a estatística $F$ e utilizar sua distribuição F no teste de igualdade de médias.
+:::
+
+<br>
+
+## Heterogeneidade
+
+:::box-blue
+Quando as variâncias entre os grupos são diferentes, o Quadrado Médio do Tratamento deixa de ser uma boa estimativa de única variância que represente todos os grupos, podendo afetar a validade do teste $F$.
+:::
